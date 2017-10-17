@@ -1,0 +1,259 @@
+Public-API android.accounts.AccountManager String getPassword(android.accounts.Account) -> AUTHENTICATE_ACCOUNTS
+Public-API android.accounts.AccountManager java.lang.String getUserData(android.accounts.Account, java.lang.String) -> AUTHENTICATE_ACCOUNTS
+Public-API android.accounts.AccountManager java.lang.Account[] getAccounts() -> GET_ACCOUNTS
+Public-API android.accounts.AccountManager java.lang.Account[] getAccountsByType(java.lang.String) -> GET_ACCOUNTS
+Public-API android.accounts.AccountManager AccountManagerFuture hasFeatures(android.accounts.Account, java.lang.String[], android.accounts.AccountManagerCallback, android.os.Handler) -> GET_ACCOUNTS
+Public-API android.accounts.AccountManager AccountManagerFuture getAccountsByTypeAndFeatures(java.lang.String, java.lang.String[], android.accounts.AccountManagerCallback, android.os.Handler) -> GET_ACCOUNTS
+Public-API android.accounts.AccountManager boolean addAccountExplicitly(android.accounts.Account, java.lang.String, android.os.Bundle) -> AUTHENTICATE_ACCOUNTS
+Public-API android.accounts.AccountManager AccountManagerFuture removeAccount(android.accounts.Account, android.accounts.AccountManagerCallback, android.os.Handler) -> MANAGE_ACCOUNTS
+Public-API android.accounts.AccountManager void invalidateAuthToken(java.lang.String, java.lang.String) -> MANAGE_ACCOUNTS, USE_CREDENTIALS
+Public-API android.accounts.AccountManager java.lang.String peekAuthToken(android.accounts.Account, java.lang.String) -> AUTHENTICATE_ACCOUNTS
+Public-API android.accounts.AccountManager void setPassword(android.accounts.Account, java.lang.String) -> AUTHENTICATE_ACCOUNTS
+Public-API android.accounts.AccountManager void clearPassword(android.accounts.Account) -> MANAGE_ACCOUNTS
+Public-API android.accounts.AccountManager void setUserData(android.accounts.Account, java.lang.String, java.lang.String) -> AUTHENTICATE_ACCOUNTS
+Public-API android.accounts.AccountManager void setAuthToken(android.accounts.Account, java.lang.String, java.lang.String) -> AUTHENTICATE_ACCOUNTS
+Public-API android.accounts.AccountManager String blockingGetAuthToken(android.accounts.Account, java.lang.String, boolean) -> USE_CREDENTIALS
+Public-API android.accounts.AccountManager AccountManagerFuture getAuthToken(android.accounts.Account, java.lang.String, android.os.Bundle, android.app.Activity, android.accounts.AccountManagerCallback, android.os.Handler) -> USE_CREDENTIALS
+Public-API android.accounts.AccountManager AccountManagerFuture getAuthToken(android.accounts.Account, java.lang.String, boolean, android.accounts.AccountManagerCallback, android.os.Handler) -> USE_CREDENTIALS
+Public-API android.accounts.AccountManager AccountManagerFuture getAuthToken(android.accounts.Account, java.lang.String, android.os.Bundle, boolean, android.accounts.AccountManagerCallback, android.os.Handler) -> USE_CREDENTIALS
+Public-API android.accounts.AccountManager AccountManagerFuture addAccount(java.lang.String, java.lang.String, java.lang.String[], android.os.Bundle, android.app.Activity, android.accounts.AccountManagerCallback, android.os.Handler) -> MANAGE_ACCOUNTS
+Public-API android.accounts.AccountManager AccountManagerFuture confirmCredentials(android.accounts.Account, android.os.Bundle, android.app.Activity, android.accounts.AccountManagerCallback, android.os.Handler) -> MANAGE_ACCOUNTS
+Public-API android.accounts.AccountManager AccountManagerFuture updateCredentials(android.accounts.Account, java.lang.String, android.os.Bundle, android.app.Activity, android.accounts.AccountManagerCallback, android.os.Handler) -> MANAGE_ACCOUNTS
+Public-API android.accounts.AccountManager AccountManagerFuture editProperties(java.lang.String, android.app.Activity, android.accounts.AccountManagerCallback, android.os.Handler) -> MANAGE_ACCOUNTS
+Public-API android.accounts.AccountManager AccountManagerFuture getAuthTokenByFeatures(java.lang.String, java.lang.String, java.lang.String[], android.app.Activity, android.os.Bundle, android.os.Bundle, android.accounts.AccountManagerCallback, android.os.Handler) -> MANAGE_ACCOUNTS
+Public-API android.accounts.AccountManager void addOnAccountsUpdatedListener(android.accounts.OnAccountsUpdateListener, android.os.Handler, boolean) -> GET_ACCOUNTS
+Public-API android.app.ActivityManager java.util.List getRecentTasks(int, int) -> GET_TASKS
+Private-API android.app.ActivityManager java.util.List getRunningTasks(int, int, IThumbnailReceiver) -> GET_TASKS
+Public-API android.app.ActivityManager java.util.List getRunningTasks(int) -> GET_TASKS
+Public-API android.app.ActivityManager void moveTaskToFront(int, int, android.os.Bundle) -> REORDER_TASKS
+Public-API android.app.ActivityManager void killBackgroundProcesses(java.lang.String) -> KILL_BACKGROUND_PROCESSES
+Private-API android.app.ActivityManager void forceStopPackage(java.lang.String) -> FORCE_STOP_PACKAGES
+Public-API android.app.AlarmManager void setTime(long) -> SET_TIME
+Public-API android.app.AlarmManager void setTimeZone(java.lang.String) -> SET_TIME, SET_TIME_ZONE
+Public-API android.app.DownloadManagerBaseTest void setWiFiStateOn(boolean) -> ACCESS_WIFI_STATE, CHANGE_WIFI_STATE
+Public-API android.app.DownloadManagerBaseTest void setAirplaneModeOn(boolean) -> WRITE_SETTINGS
+Public-API android.app.KeyguardManager void exitKeyguardSecurely(android.app.KeyguardManager$OnKeyguardExitResult) -> DISABLE_KEYGUARD
+Public-API android.app.WallpaperManager void setResource(int) -> SET_WALLPAPER
+Public-API android.app.WallpaperManager void setBitmap(android.graphics.Bitmap) -> SET_WALLPAPER
+Public-API android.app.WallpaperManager void setStream(java.io.InputStream) -> SET_WALLPAPER
+Public-API android.app.WallpaperManager void suggestDesiredDimensions(int, int) -> SET_WALLPAPER, SET_WALLPAPER_HINTS
+Public-API android.app.WallpaperManager void clear() -> SET_WALLPAPER
+Public-API android.app.backup.BackupManager void dataChanged(java.lang.String) -> BACKUP
+Private-API android.app.backup.RestoreSession int restoreAll(long, android.app.backup.RestoreObserver) -> BACKUP
+Private-API android.app.backup.RestoreSession java.lang.int restoreSome(long, android.app.backup.RestoreObserver, java.lang.String[]) -> BACKUP
+Private-API android.app.backup.RestoreSession int restorePackage(java.lang.String, android.app.backup.RestoreObserver) -> BACKUP
+Private-API android.appwidget.AppWidgetManager void bindAppWidgetId(int, android.content.ComponentName) -> BIND_APPWIDGET
+Public-API android.appwidget.AppWidgetManager boolean bindAppWidgetIdIfAllowed(int, android.content.ComponentName) -> BIND_APPWIDGET
+Private-API android.appwidget.AppWidgetManager java.lang.boolean hasBindAppWidgetPermission(java.lang.String) -> MODIFY_APPWIDGET_BIND_PERMISSIONS
+Private-API android.appwidget.AppWidgetManager void setBindAppWidgetPermission(java.lang.String, boolean) -> MODIFY_APPWIDGET_BIND_PERMISSIONS
+Private-API android.bluetooth.BluetoothA2dp boolean connect(android.bluetooth.BluetoothDevice) -> BLUETOOTH, BLUETOOTH_ADMIN
+Private-API android.bluetooth.BluetoothA2dp boolean disconnect(android.bluetooth.BluetoothDevice) -> BLUETOOTH, BLUETOOTH_ADMIN
+Private-API android.bluetooth.BluetoothA2dp boolean setPriority(android.bluetooth.BluetoothDevice, int) -> BLUETOOTH, BLUETOOTH_ADMIN
+Private-API android.bluetooth.BluetoothA2dp int getPriority(android.bluetooth.BluetoothDevice) -> BLUETOOTH
+Public-API android.bluetooth.BluetoothA2dp boolean isA2dpPlaying(android.bluetooth.BluetoothDevice) -> BLUETOOTH
+Private-API android.bluetooth.BluetoothA2dp boolean suspendSink(android.bluetooth.BluetoothDevice) -> BLUETOOTH, BLUETOOTH_ADMIN
+Private-API android.bluetooth.BluetoothA2dp boolean resumeSink(android.bluetooth.BluetoothDevice) -> BLUETOOTH, BLUETOOTH_ADMIN
+Public-API android.bluetooth.BluetoothAdapter boolean isEnabled() -> BLUETOOTH
+Public-API android.bluetooth.BluetoothAdapter int getState() -> BLUETOOTH
+Public-API android.bluetooth.BluetoothAdapter boolean enable() -> BLUETOOTH, BLUETOOTH_ADMIN
+Public-API android.bluetooth.BluetoothAdapter boolean disable() -> BLUETOOTH, BLUETOOTH_ADMIN
+Public-API android.bluetooth.BluetoothAdapter String getAddress() -> BLUETOOTH
+Public-API android.bluetooth.BluetoothAdapter String getName() -> BLUETOOTH
+Private-API android.bluetooth.BluetoothAdapter android.os.ParcelUuid[] getUuids() -> BLUETOOTH
+Public-API android.bluetooth.BluetoothAdapter java.lang.boolean setName(java.lang.String) -> BLUETOOTH, BLUETOOTH_ADMIN
+Public-API android.bluetooth.BluetoothAdapter java.lang.int getScanMode() -> BLUETOOTH
+Private-API android.bluetooth.BluetoothAdapter boolean setScanMode(int, int) -> WRITE_SECURE_SETTINGS
+Public-API android.bluetooth.BluetoothAdapter boolean startDiscovery() -> BLUETOOTH, BLUETOOTH_ADMIN
+Public-API android.bluetooth.BluetoothAdapter boolean cancelDiscovery() -> BLUETOOTH, BLUETOOTH_ADMIN
+Public-API android.bluetooth.BluetoothAdapter boolean isDiscovering() -> BLUETOOTH
+Public-API android.bluetooth.BluetoothAdapter java.util.Set getBondedDevices() -> BLUETOOTH
+Public-API android.bluetooth.BluetoothAdapter int getProfileConnectionState(int) -> BLUETOOTH
+Private-API android.bluetooth.BluetoothAdapter BluetoothServerSocket listenUsingRfcommOn(int) -> BLUETOOTH, BLUETOOTH_ADMIN
+Public-API android.bluetooth.BluetoothAdapter BluetoothServerSocket listenUsingRfcommWithServiceRecord(java.lang.String, java.util.UUID) -> BLUETOOTH
+Public-API android.bluetooth.BluetoothAdapter BluetoothServerSocket listenUsingInsecureRfcommWithServiceRecord(java.lang.String, java.util.UUID) -> BLUETOOTH
+Private-API android.bluetooth.BluetoothAdapter BluetoothServerSocket listenUsingEncryptedRfcommWithServiceRecord(java.lang.String, java.util.UUID) -> BLUETOOTH
+Private-API android.bluetooth.BluetoothAdapter android.util.Pair readOutOfBandData() -> BLUETOOTH
+Private-API android.bluetooth.BluetoothAdapter boolean changeApplicationBluetoothState(boolean, android.bluetooth.BluetoothAdapter$BluetoothStateChangeCallback) -> BLUETOOTH
+Public-API android.bluetooth.BluetoothDevice String getName() -> BLUETOOTH
+Private-API android.bluetooth.BluetoothDevice java.lang.boolean createBond() -> BLUETOOTH, BLUETOOTH_ADMIN
+Private-API android.bluetooth.BluetoothDevice boolean createBondOutOfBand(byte[], byte[]) -> BLUETOOTH, BLUETOOTH_ADMIN
+Private-API android.bluetooth.BluetoothDevice boolean setDeviceOutOfBandData(byte[], byte[]) -> BLUETOOTH, BLUETOOTH_ADMIN
+Private-API android.bluetooth.BluetoothDevice boolean cancelBondProcess() -> BLUETOOTH, BLUETOOTH_ADMIN
+Private-API android.bluetooth.BluetoothDevice boolean removeBond() -> BLUETOOTH, BLUETOOTH_ADMIN
+Public-API android.bluetooth.BluetoothDevice int getBondState() -> BLUETOOTH
+Public-API android.bluetooth.BluetoothDevice BluetoothClass getBluetoothClass() -> BLUETOOTH
+Private-API android.bluetooth.BluetoothDevice boolean getTrustState() -> BLUETOOTH
+Private-API android.bluetooth.BluetoothDevice boolean setTrust(boolean) -> BLUETOOTH, BLUETOOTH_ADMIN
+Public-API android.bluetooth.BluetoothDevice android.os.ParcelUuid[] getUuids() -> BLUETOOTH
+Public-API android.bluetooth.BluetoothDevice boolean fetchUuidsWithSdp() -> BLUETOOTH
+Private-API android.bluetooth.BluetoothDevice BluetoothSocket createRfcommSocket(int) -> BLUETOOTH
+Public-API android.bluetooth.BluetoothDevice BluetoothSocket createRfcommSocketToServiceRecord(java.util.UUID) -> BLUETOOTH
+Public-API android.bluetooth.BluetoothDevice BluetoothSocket createInsecureRfcommSocketToServiceRecord(java.util.UUID) -> BLUETOOTH
+Private-API android.bluetooth.BluetoothDevice BluetoothSocket createInsecureRfcommSocket(int) -> BLUETOOTH, BLUETOOTH_ADMIN
+Private-API android.bluetooth.BluetoothDevice BluetoothSocket createScoSocket() -> BLUETOOTH, BLUETOOTH_ADMIN
+Private-API android.bluetooth.BluetoothHeadset boolean connect(android.bluetooth.BluetoothDevice) -> BLUETOOTH, BLUETOOTH_ADMIN
+Private-API android.bluetooth.BluetoothHeadset boolean disconnect(android.bluetooth.BluetoothDevice) -> BLUETOOTH, BLUETOOTH_ADMIN
+Private-API android.bluetooth.BluetoothHeadset boolean setPriority(android.bluetooth.BluetoothDevice, int) -> BLUETOOTH, BLUETOOTH_ADMIN
+Private-API android.bluetooth.BluetoothHeadset int getPriority(android.bluetooth.BluetoothDevice) -> BLUETOOTH
+Public-API android.bluetooth.BluetoothHeadset boolean startVoiceRecognition(android.bluetooth.BluetoothDevice) -> BLUETOOTH
+Public-API android.bluetooth.BluetoothHeadset boolean stopVoiceRecognition(android.bluetooth.BluetoothDevice) -> BLUETOOTH
+Public-API android.bluetooth.BluetoothHeadset boolean isAudioConnected(android.bluetooth.BluetoothDevice) -> BLUETOOTH
+Public-API android.bluetooth.BluetoothHealth boolean registerSinkAppConfiguration(java.lang.String, int, android.bluetooth.BluetoothHealthCallback) -> BLUETOOTH
+Private-API android.bluetooth.BluetoothHealth boolean registerAppConfiguration(java.lang.String, int, int, int, android.bluetooth.BluetoothHealthCallback) -> BLUETOOTH
+Public-API android.bluetooth.BluetoothHealth boolean unregisterAppConfiguration(android.bluetooth.BluetoothHealthAppConfiguration) -> BLUETOOTH
+Public-API android.bluetooth.BluetoothHealth boolean connectChannelToSource(android.bluetooth.BluetoothDevice, android.bluetooth.BluetoothHealthAppConfiguration) -> BLUETOOTH
+Private-API android.bluetooth.BluetoothHealth boolean connectChannelToSink(android.bluetooth.BluetoothDevice, android.bluetooth.BluetoothHealthAppConfiguration, int) -> BLUETOOTH
+Public-API android.bluetooth.BluetoothHealth boolean disconnectChannel(android.bluetooth.BluetoothDevice, android.bluetooth.BluetoothHealthAppConfiguration, int) -> BLUETOOTH
+Public-API android.bluetooth.BluetoothHealth android.os.ParcelFileDescriptor getMainChannelFd(android.bluetooth.BluetoothDevice, android.bluetooth.BluetoothHealthAppConfiguration) -> BLUETOOTH
+Public-API android.bluetooth.BluetoothHealth int getConnectionState(android.bluetooth.BluetoothDevice) -> BLUETOOTH
+Public-API android.bluetooth.BluetoothHealth java.util.List getConnectedDevices() -> BLUETOOTH
+Public-API android.bluetooth.BluetoothHealth java.util.List getDevicesMatchingConnectionStates(int[]) -> BLUETOOTH
+Private-API android.bluetooth.BluetoothInputDevice boolean connect(android.bluetooth.BluetoothDevice) -> BLUETOOTH, BLUETOOTH_ADMIN
+Private-API android.bluetooth.BluetoothInputDevice boolean disconnect(android.bluetooth.BluetoothDevice) -> BLUETOOTH, BLUETOOTH_ADMIN
+Private-API android.bluetooth.BluetoothInputDevice boolean setPriority(android.bluetooth.BluetoothDevice, int) -> BLUETOOTH, BLUETOOTH_ADMIN
+Private-API android.bluetooth.BluetoothInputDevice int getPriority(android.bluetooth.BluetoothDevice) -> BLUETOOTH
+Private-API android.bluetooth.BluetoothPan boolean connect(android.bluetooth.BluetoothDevice) -> BLUETOOTH, BLUETOOTH_ADMIN
+Private-API android.bluetooth.BluetoothPan boolean disconnect(android.bluetooth.BluetoothDevice) -> BLUETOOTH, BLUETOOTH_ADMIN
+Public-API android.content.ContentResolver java.lang.boolean getSyncAutomatically(android.accounts.Account, java.lang.String) -> READ_SYNC_SETTINGS
+Public-API android.content.ContentResolver void setSyncAutomatically(android.accounts.Account, java.lang.String, boolean) -> WRITE_SYNC_SETTINGS
+Public-API android.content.ContentResolver void addPeriodicSync(android.accounts.Account, java.lang.String, android.os.Bundle, long) -> WRITE_SYNC_SETTINGS
+Public-API android.content.ContentResolver void removePeriodicSync(android.accounts.Account, java.lang.String, android.os.Bundle) -> WRITE_SYNC_SETTINGS
+Public-API android.content.ContentResolver java.lang.List getPeriodicSyncs(android.accounts.Account, java.lang.String) -> READ_SYNC_SETTINGS
+Public-API android.content.ContentResolver java.lang.int getIsSyncable(android.accounts.Account, java.lang.String) -> READ_SYNC_SETTINGS
+Public-API android.content.ContentResolver void setIsSyncable(android.accounts.Account, java.lang.String, int) -> WRITE_SYNC_SETTINGS
+Public-API android.content.ContentResolver boolean getMasterSyncAutomatically() -> READ_SYNC_SETTINGS
+Public-API android.content.ContentResolver void setMasterSyncAutomatically(boolean) -> WRITE_SYNC_SETTINGS
+Public-API android.content.ContentResolver java.lang.boolean isSyncActive(android.accounts.Account, java.lang.String) -> READ_SYNC_STATS
+Public-API android.content.ContentResolver java.lang.SyncInfo getCurrentSync() -> READ_SYNC_STATS
+Public-API android.content.ContentResolver java.lang.List getCurrentSyncs() -> READ_SYNC_STATS
+Public-API android.content.ContentResolver java.lang.boolean isSyncPending(android.accounts.Account, java.lang.String) -> READ_SYNC_STATS
+Public-API android.content.Context void setWallpaper(android.graphics.Bitmap) -> SET_WALLPAPER
+Public-API android.content.Context void setWallpaper(java.io.InputStream) -> SET_WALLPAPER
+Public-API android.content.Context void clearWallpaper() -> SET_WALLPAPER
+Public-API android.content.Context void sendStickyBroadcast(android.content.Intent) -> BROADCAST_STICKY
+Public-API android.content.Context void removeStickyBroadcast(android.content.Intent) -> BROADCAST_STICKY
+Private-API android.content.pm.PackageManager void installPackage(android.net.Uri, IPackageInstallObserver, int, java.lang.String) -> INSTALL_PACKAGES
+Private-API android.content.pm.PackageManager void deletePackage(java.lang.String, IPackageDeleteObserver, int) -> DELETE_PACKAGES
+Private-API android.content.pm.PackageManager void deleteApplicationCacheFiles(java.lang.String, IPackageDataObserver) -> DELETE_CACHE_FILES
+Private-API android.content.pm.PackageManager void getPackageSizeInfo(java.lang.String, IPackageStatsObserver) -> GET_PACKAGE_SIZE
+Private-API android.content.pm.PackageManager void movePackage(java.lang.String, IPackageMoveObserver, int) -> MOVE_PACKAGE
+Public-API android.content.pm.PackageManagerHostTests void testInstallAndLaunchFLPermsAppOnSD() -> ACCESS_FINE_LOCATION
+Public-API android.content.pm.PackageManagerHostTests void testInstallAndLaunchFLPermsAppOnSD_Reboot() -> ACCESS_FINE_LOCATION
+Private-API android.hardware.input.InputManager void setPointerSpeed(android.content.Context, int) -> WRITE_SETTINGS
+Private-API android.hardware.input.InputManager void tryPointerSpeed(int) -> SET_POINTER_SPEED
+Private-API android.hardware.input.InputManager boolean injectInputEvent(android.view.InputEvent, int) -> INJECT_EVENTS
+Public-API android.location.LocationManager void addTestProvider(java.lang.String, boolean, boolean, boolean, boolean, boolean, boolean, boolean, int, int) -> ACCESS_MOCK_LOCATION
+Public-API android.location.LocationManager void removeTestProvider(java.lang.String) -> ACCESS_MOCK_LOCATION
+Public-API android.location.LocationManager void setTestProviderLocation(java.lang.String, android.location.Location) -> ACCESS_MOCK_LOCATION
+Public-API android.location.LocationManager void clearTestProviderLocation(java.lang.String) -> ACCESS_MOCK_LOCATION
+Public-API android.location.LocationManager void setTestProviderEnabled(java.lang.String, boolean) -> ACCESS_MOCK_LOCATION
+Public-API android.location.LocationManager void clearTestProviderEnabled(java.lang.String) -> ACCESS_MOCK_LOCATION
+Public-API android.location.LocationManager void setTestProviderStatus(java.lang.String, int, android.os.Bundle, long) -> ACCESS_MOCK_LOCATION
+Public-API android.location.LocationManager void clearTestProviderStatus(java.lang.String) -> ACCESS_MOCK_LOCATION
+Public-API android.location.LocationManager boolean addGpsStatusListener(android.location.GpsStatus) -> ACCESS_FINE_LOCATION
+Public-API android.location.LocationManager boolean addNmeaListener(android.location.GpsStatus) -> ACCESS_FINE_LOCATION
+Private-API android.media.AsyncPlayer void setUsesWakeLock(android.content.Context) -> WAKE_LOCK
+Public-API android.media.AudioManager void startBluetoothSco() -> MODIFY_AUDIO_SETTINGS
+Public-API android.media.AudioManager void stopBluetoothSco() -> MODIFY_AUDIO_SETTINGS
+Public-API android.media.MediaPlayer void setWakeMode(android.content.Context, int) -> WAKE_LOCK
+Public-API android.net.ConnectivityManager NetworkInfo getActiveNetworkInfo() -> ACCESS_NETWORK_STATE
+Public-API android.net.ConnectivityManager java.lang.int startUsingNetworkFeature(int, java.lang.String) -> CHANGE_NETWORK_STATE
+Public-API android.net.ConnectivityManager java.lang.int stopUsingNetworkFeature(int, java.lang.String) -> CHANGE_NETWORK_STATE
+Public-API android.net.ConnectivityManager boolean requestRouteToHost(int, int) -> CHANGE_NETWORK_STATE
+Private-API android.net.ConnectivityManager void setBackgroundDataSetting(boolean) -> CHANGE_BACKGROUND_DATA_SETTING
+Private-API android.net.Proxy java.lang.HttpHost getPreferredHttpHost(android.content.Context, java.lang.String) -> ACCESS_NETWORK_STATE
+Private-API android.net.TrafficStats void setThreadStatsUid(int) -> UPDATE_DEVICE_STATS
+Public-API android.net.sip.SipAudioCall void setSpeakerMode(boolean) -> MODIFY_AUDIO_SETTINGS
+Public-API android.net.sip.SipAudioCall void startAudio() -> RECORD_AUDIO, ACCESS_WIFI_STATE, WAKE_LOCK
+Public-API android.nfc.NfcAdapter void setBeamPushUris(android.net.Uri[], android.app.Activity) -> NFC
+Public-API android.nfc.NfcAdapter void setBeamPushUrisCallback(android.nfc.NfcAdapter$CreateBeamUrisCallback, android.app.Activity) -> NFC
+Public-API android.nfc.NfcAdapter void setNdefPushMessage(android.nfc.NdefMessage, android.app.Activity, android.app.Activity) -> NFC
+Public-API android.nfc.NfcAdapter void setNdefPushMessageCallback(android.nfc.NfcAdapter$CreateNdefMessageCallback, android.app.Activity, android.app.Activity) -> NFC
+Public-API android.nfc.NfcAdapter void setOnNdefPushCompleteCallback(android.nfc.NfcAdapter$OnNdefPushCompleteCallback, android.app.Activity, android.app.Activity) -> NFC
+Public-API android.nfc.NfcAdapter void enableForegroundDispatch(android.app.Activity, android.app.PendingIntent, android.content.IntentFilter[], java.lang.String[][]) -> NFC
+Public-API android.nfc.NfcAdapter void disableForegroundDispatch(android.app.Activity) -> NFC
+Public-API android.nfc.NfcAdapter void enableForegroundNdefPush(android.app.Activity, android.nfc.NdefMessage) -> NFC
+Public-API android.nfc.NfcAdapter void disableForegroundNdefPush(android.app.Activity) -> NFC
+Private-API android.nfc.NfcAdapter void dispatch(android.nfc.Tag) -> NFC, WRITE_SECURE_SETTINGS
+Public-API android.nfc.tech.IsoDep void setTimeout(int) -> NFC
+Public-API android.nfc.tech.IsoDep int getTimeout() -> NFC
+Public-API android.nfc.tech.IsoDep byte[] transceive(byte[]) -> NFC
+Public-API android.nfc.tech.MifareClassic boolean authenticateSectorWithKeyA(int, byte[]) -> NFC
+Public-API android.nfc.tech.MifareClassic boolean authenticateSectorWithKeyB(int, byte[]) -> NFC
+Public-API android.nfc.tech.MifareClassic byte[] readBlock(int) -> NFC
+Public-API android.nfc.tech.MifareClassic void writeBlock(int, byte[]) -> NFC
+Public-API android.nfc.tech.MifareClassic void increment(int, int) -> NFC
+Public-API android.nfc.tech.MifareClassic void decrement(int, int) -> NFC
+Public-API android.nfc.tech.MifareClassic void transfer(int) -> NFC
+Public-API android.nfc.tech.MifareClassic void restore(int) -> NFC
+Public-API android.nfc.tech.MifareClassic byte[] transceive(byte[]) -> NFC
+Public-API android.nfc.tech.MifareClassic void setTimeout(int) -> NFC
+Public-API android.nfc.tech.MifareClassic int getTimeout() -> NFC
+Public-API android.nfc.tech.MifareUltralight byte[] readPages(int) -> NFC
+Public-API android.nfc.tech.MifareUltralight void writePage(int, byte[]) -> NFC
+Public-API android.nfc.tech.MifareUltralight byte[] transceive(byte[]) -> NFC
+Public-API android.nfc.tech.MifareUltralight void setTimeout(int) -> NFC
+Public-API android.nfc.tech.MifareUltralight int getTimeout() -> NFC
+Public-API android.nfc.tech.Ndef boolean isWritable() -> NFC
+Public-API android.nfc.tech.Ndef android.nfc.NdefMessage getNdefMessage() -> NFC
+Public-API android.nfc.tech.Ndef void writeNdefMessage(android.nfc.NdefMessage) -> NFC
+Public-API android.nfc.tech.Ndef boolean makeReadOnly() -> NFC
+Public-API android.nfc.tech.NdefFormatable void format(android.nfc.NdefMessage) -> NFC
+Public-API android.nfc.tech.NdefFormatable void formatReadOnly(android.nfc.NdefMessage) -> NFC
+Public-API android.nfc.tech.NfcA byte[] transceive(byte[]) -> NFC
+Public-API android.nfc.tech.NfcA void setTimeout(int) -> NFC
+Public-API android.nfc.tech.NfcA int getTimeout() -> NFC
+Public-API android.nfc.tech.NfcB byte[] transceive(byte[]) -> NFC
+Public-API android.nfc.tech.NfcF byte[] transceive(byte[]) -> NFC
+Public-API android.nfc.tech.NfcF void setTimeout(int) -> NFC
+Public-API android.nfc.tech.NfcF int getTimeout() -> NFC
+Public-API android.nfc.tech.NfcV byte[] transceive(byte[]) -> NFC
+Public-API android.os.Debug java.lang.boolean dumpService(java.lang.String, java.io.FileDescriptor, java.lang.String[]) -> DUMP
+Public-API android.os.DropBoxManager Entry getNextEntry(java.lang.String, long) -> READ_LOGS
+Private-API android.os.Environment java.io.File getMediaStorageDirectory() -> WRITE_MEDIA_STORAGE
+Public-API android.os.PowerManager java.lang.WakeLock newWakeLock(int, java.lang.String) -> WAKE_LOCK
+Public-API android.os.PowerManager void reboot(java.lang.String) -> REBOOT
+Public-API android.os.PowerManagerTest void doTestSetBacklightBrightness() -> DEVICE_POWER
+Public-API android.os.RecoverySystem void installPackage(android.content.Context, java.io.File) -> REBOOT
+Public-API android.os.RecoverySystem void rebootWipeUserData(android.content.Context) -> REBOOT
+Public-API android.os.Vibrator void vibrate(long) -> VIBRATE
+Public-API android.os.Vibrator void vibrate(long[], int) -> VIBRATE
+Public-API android.os.Vibrator void cancel() -> VIBRATE
+Private-API android.telephony.PhoneNumberUtils java.lang.boolean isVoiceMailNumber(java.lang.String) -> READ_PHONE_STATE
+Private-API android.telephony.PhoneStateListener void onOtaspChanged(int) -> READ_PHONE_STATE
+Public-API android.telephony.TelephonyManager String getDeviceSoftwareVersion() -> READ_PHONE_STATE
+Public-API android.telephony.TelephonyManager String getDeviceId() -> READ_PHONE_STATE
+Public-API android.telephony.TelephonyManager CellLocation getCellLocation() -> ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION
+Private-API android.telephony.TelephonyManager void enableLocationUpdates() -> CONTROL_LOCATION_UPDATES
+Private-API android.telephony.TelephonyManager void disableLocationUpdates() -> CONTROL_LOCATION_UPDATES
+Public-API android.telephony.TelephonyManager String getSimSerialNumber() -> READ_PHONE_STATE
+Public-API android.telephony.TelephonyManager String getSubscriberId() -> READ_PHONE_STATE
+Public-API android.telephony.TelephonyManager String getLine1Number() -> READ_PHONE_STATE
+Private-API android.telephony.TelephonyManager String getLine1AlphaTag() -> READ_PHONE_STATE
+Private-API android.telephony.TelephonyManager String getMsisdn() -> READ_PHONE_STATE
+Public-API android.telephony.TelephonyManager String getVoiceMailNumber() -> READ_PHONE_STATE
+Private-API android.telephony.TelephonyManager String getCompleteVoiceMailNumber() -> CALL_PRIVILEGED
+Private-API android.telephony.TelephonyManager int getVoiceMessageCount() -> READ_PHONE_STATE
+Public-API android.telephony.TelephonyManager String getVoiceMailAlphaTag() -> READ_PHONE_STATE
+Public-API android.webkit.WebSettings void setBlockNetworkLoads(boolean) -> INTERNET
+Public-API com.android.framework.permission.tests.SmsManagerPermissionTest void testSendTextMessage() -> SEND_SMS
+Public-API com.android.framework.permission.tests.SmsManagerPermissionTest void testSendDataMessage() -> SEND_SMS
+Public-API com.android.framework.permission.tests.VibratorServicePermissionTest void testVibrate() -> VIBRATE
+Public-API com.android.framework.permission.tests.VibratorServicePermissionTest void testVibratePattern() -> VIBRATE
+Public-API com.android.framework.permission.tests.VibratorServicePermissionTest void testCancelVibrate() -> VIBRATE
+Public-API com.android.frameworks.downloadmanagertests.DownloadManagerBaseTest void setWiFiStateOn(boolean) -> ACCESS_WIFI_STATE, CHANGE_WIFI_STATE
+Public-API com.android.frameworks.downloadmanagertests.DownloadManagerBaseTest void setAirplaneModeOn(boolean) -> WRITE_SETTINGS
+Private-API com.android.internal.telephony.CallerInfo com.android.internal.telephony.CallerInfo markAsVoiceMail() -> READ_PHONE_STATE
+Public-API com.android.internal.telephony.IccPhoneBookInterfaceManager java.lang.boolean updateAdnRecordsInEfBySearch(int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String) -> WRITE_CONTACTS
+Public-API com.android.internal.telephony.IccPhoneBookInterfaceManager java.lang.boolean updateAdnRecordsInEfByIndex(int, java.lang.String, java.lang.String, int, java.lang.String) -> WRITE_CONTACTS
+Public-API com.android.internal.telephony.IccPhoneBookInterfaceManager java.util.List getAdnRecordsInEf(int) -> READ_CONTACTS
+Private-API com.android.location.provider.LocationProvider void reportLocation(android.location.Location) -> INSTALL_LOCATION_PROVIDER
+Public-API com.android.nfc_extras.NfcAdapterExtras com.android.nfc_extras.NfcAdapterExtras get(android.nfc.NfcAdapter) -> WRITE_SECURE_SETTINGS
+Public-API com.android.nfc_extras.NfcAdapterExtras java.lang.CardEmulationRoute getCardEmulationRoute() -> NFC, WRITE_SECURE_SETTINGS
+Public-API com.android.nfc_extras.NfcAdapterExtras void setCardEmulationRoute(com.android.nfc_extras.NfcAdapterExtras$CardEmulationRoute) -> NFC, WRITE_SECURE_SETTINGS
+Public-API com.android.nfc_extras.NfcAdapterExtras NfcExecutionEnvironment getEmbeddedExecutionEnvironment() -> NFC, WRITE_SECURE_SETTINGS
+Public-API com.android.nfc_extras.NfcExecutionEnvironment void open() -> NFC, WRITE_SECURE_SETTINGS
+Public-API com.android.nfc_extras.NfcExecutionEnvironment void close() -> NFC, WRITE_SECURE_SETTINGS
+Public-API com.android.nfc_extras.NfcExecutionEnvironment byte[] transceive(byte[]) -> NFC, WRITE_SECURE_SETTINGS
+Public-API com.android.server.PowerManagerService void crash(java.lang.String) -> REBOOT
+Private-API com.android.systemui.media.NotificationPlayer void setUsesWakeLock(android.content.Context) -> WAKE_LOCK
