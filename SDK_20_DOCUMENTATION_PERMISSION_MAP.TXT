@@ -1,0 +1,425 @@
+Accessible-API public java.lang.String android.accounts.AccountManager.getPassword(android.accounts.Account) -> AUTHENTICATE_ACCOUNTS
+Accessible-API public java.lang.String android.accounts.AccountManager.getUserData(android.accounts.Account, java.lang.String) -> AUTHENTICATE_ACCOUNTS
+Accessible-API public android.accounts.Account android.accounts.AccountManager.getAccounts() -> GET_ACCOUNTS
+Accessible-API public android.accounts.Account android.accounts.AccountManager.getAccountsByType(java.lang.String) -> GET_ACCOUNTS
+Accessible-API public android.accounts.AccountManagerFuture android.accounts.AccountManager.hasFeatures(android.accounts.Account, java.lang.String[], android.accounts.AccountManagerCallback, android.os.Handler) -> GET_ACCOUNTS
+Accessible-API public android.accounts.AccountManagerFuture android.accounts.AccountManager.getAccountsByTypeAndFeatures(java.lang.String, java.lang.String[], android.accounts.AccountManagerCallback, android.os.Handler) -> GET_ACCOUNTS
+Accessible-API public boolean android.accounts.AccountManager.addAccountExplicitly(android.accounts.Account, java.lang.String, android.os.Bundle) -> AUTHENTICATE_ACCOUNTS
+Accessible-API public android.accounts.AccountManagerFuture android.accounts.AccountManager.removeAccount(android.accounts.Account, android.accounts.AccountManagerCallback, android.os.Handler) -> MANAGE_ACCOUNTS
+Accessible-API public void android.accounts.AccountManager.invalidateAuthToken(java.lang.String, java.lang.String) -> MANAGE_ACCOUNTS, USE_CREDENTIALS
+Accessible-API public java.lang.String android.accounts.AccountManager.peekAuthToken(android.accounts.Account, java.lang.String) -> AUTHENTICATE_ACCOUNTS
+Accessible-API public void android.accounts.AccountManager.setPassword(android.accounts.Account, java.lang.String) -> AUTHENTICATE_ACCOUNTS
+Accessible-API public void android.accounts.AccountManager.clearPassword(android.accounts.Account) -> MANAGE_ACCOUNTS
+Accessible-API public void android.accounts.AccountManager.setUserData(android.accounts.Account, java.lang.String, java.lang.String) -> AUTHENTICATE_ACCOUNTS
+Accessible-API public void android.accounts.AccountManager.setAuthToken(android.accounts.Account, java.lang.String, java.lang.String) -> AUTHENTICATE_ACCOUNTS
+Accessible-API public java.lang.String android.accounts.AccountManager.blockingGetAuthToken(android.accounts.Account, java.lang.String, boolean) -> USE_CREDENTIALS
+Accessible-API public android.accounts.AccountManagerFuture android.accounts.AccountManager.getAuthToken(android.accounts.Account, java.lang.String, android.os.Bundle, android.app.Activity, android.accounts.AccountManagerCallback, android.os.Handler) -> USE_CREDENTIALS
+Accessible-API public android.accounts.AccountManagerFuture android.accounts.AccountManager.getAuthToken(android.accounts.Account, java.lang.String, boolean, android.accounts.AccountManagerCallback, android.os.Handler) -> USE_CREDENTIALS
+Accessible-API public android.accounts.AccountManagerFuture android.accounts.AccountManager.getAuthToken(android.accounts.Account, java.lang.String, android.os.Bundle, boolean, android.accounts.AccountManagerCallback, android.os.Handler) -> USE_CREDENTIALS
+Accessible-API public android.accounts.AccountManagerFuture android.accounts.AccountManager.addAccount(java.lang.String, java.lang.String, java.lang.String[], android.os.Bundle, android.app.Activity, android.accounts.AccountManagerCallback, android.os.Handler) -> MANAGE_ACCOUNTS
+Accessible-API public android.accounts.AccountManagerFuture android.accounts.AccountManager.confirmCredentials(android.accounts.Account, android.os.Bundle, android.app.Activity, android.accounts.AccountManagerCallback, android.os.Handler) -> MANAGE_ACCOUNTS
+Accessible-API public android.accounts.AccountManagerFuture android.accounts.AccountManager.updateCredentials(android.accounts.Account, java.lang.String, android.os.Bundle, android.app.Activity, android.accounts.AccountManagerCallback, android.os.Handler) -> MANAGE_ACCOUNTS
+Accessible-API public android.accounts.AccountManagerFuture android.accounts.AccountManager.editProperties(java.lang.String, android.app.Activity, android.accounts.AccountManagerCallback, android.os.Handler) -> MANAGE_ACCOUNTS
+Accessible-API public android.accounts.AccountManagerFuture android.accounts.AccountManager.getAuthTokenByFeatures(java.lang.String, java.lang.String, java.lang.String[], android.app.Activity, android.os.Bundle, android.os.Bundle, android.accounts.AccountManagerCallback, android.os.Handler) -> MANAGE_ACCOUNTS
+Accessible-API public void android.accounts.AccountManager.addOnAccountsUpdatedListener(android.accounts.OnAccountsUpdateListener, android.os.Handler, boolean) -> GET_ACCOUNTS
+Accessible-API public java.util.List android.app.ActivityManager.getRecentTasks(int, int) -> GET_TASKS
+Inaccessible-API public java.util.List android.app.ActivityManager.getRecentTasksForUser(int, int, int) -> GET_TASKS, INTERACT_ACROSS_USERS, INTERACT_ACROSS_USERS_FULL
+Inaccessible-API public java.util.List android.app.ActivityManager.getRunningTasks(int, int, IThumbnailReceiver) -> GET_TASKS
+Accessible-API public java.util.List android.app.ActivityManager.getRunningTasks(int) -> GET_TASKS
+Accessible-API public void android.app.ActivityManager.moveTaskToFront(int, int, android.os.Bundle) -> REORDER_TASKS
+Accessible-API public void android.app.ActivityManager.killBackgroundProcesses(java.lang.String) -> KILL_BACKGROUND_PROCESSES
+Inaccessible-API public void android.app.ActivityManager.forceStopPackage(java.lang.String) -> FORCE_STOP_PACKAGES
+Inaccessible-API public static int android.app.ActivityManager.handleIncomingUser(int, int, int, boolean, boolean, java.lang.String, java.lang.String) -> INTERACT_ACROSS_USERS, INTERACT_ACROSS_USERS_FULL
+Accessible-API public void android.app.ActivityManager.dumpPackageState(java.io.FileDescriptor, java.lang.String) -> DUMP
+Accessible-API public void android.app.AlarmManager.setTime(long) -> SET_TIME
+Accessible-API public void android.app.AlarmManager.setTimeZone(java.lang.String) -> SET_TIME, SET_TIME_ZONE
+Accessible-API protected void android.app.DownloadManagerBaseTest.setWiFiStateOn(boolean) -> ACCESS_WIFI_STATE, CHANGE_WIFI_STATE
+Accessible-API protected void android.app.DownloadManagerBaseTest.setAirplaneModeOn(boolean) -> WRITE_SETTINGS
+Accessible-API public void android.app.KeyguardManager.exitKeyguardSecurely(android.app.KeyguardManager$OnKeyguardExitResult) -> DISABLE_KEYGUARD
+Accessible-API public void android.app.WallpaperManager.setResource(int) -> SET_WALLPAPER
+Accessible-API public void android.app.WallpaperManager.setBitmap(android.graphics.Bitmap) -> SET_WALLPAPER
+Accessible-API public void android.app.WallpaperManager.setStream(java.io.InputStream) -> SET_WALLPAPER
+Accessible-API public void android.app.WallpaperManager.suggestDesiredDimensions(int, int) -> SET_WALLPAPER, SET_WALLPAPER_HINTS
+Accessible-API public void android.app.WallpaperManager.clear() -> SET_WALLPAPER
+Accessible-API public static void android.app.backup.BackupManager.dataChanged(java.lang.String) -> BACKUP
+Inaccessible-API public int android.app.backup.RestoreSession.restoreAll(long, android.app.backup.RestoreObserver) -> BACKUP
+Inaccessible-API public int android.app.backup.RestoreSession.restoreSome(long, android.app.backup.RestoreObserver, java.lang.String[]) -> BACKUP
+Inaccessible-API public int android.app.backup.RestoreSession.restorePackage(java.lang.String, android.app.backup.RestoreObserver) -> BACKUP
+Inaccessible-API public void android.appwidget.AppWidgetManager.bindAppWidgetId(int, android.content.ComponentName) -> BIND_APPWIDGET
+Inaccessible-API public void android.appwidget.AppWidgetManager.bindAppWidgetId(int, android.content.ComponentName, android.os.Bundle) -> BIND_APPWIDGET
+Accessible-API public boolean android.appwidget.AppWidgetManager.bindAppWidgetIdIfAllowed(int, android.content.ComponentName) -> BIND_APPWIDGET
+Accessible-API public boolean android.appwidget.AppWidgetManager.bindAppWidgetIdIfAllowed(int, android.content.ComponentName, android.os.Bundle) -> BIND_APPWIDGET
+Inaccessible-API public boolean android.appwidget.AppWidgetManager.hasBindAppWidgetPermission(java.lang.String) -> MODIFY_APPWIDGET_BIND_PERMISSIONS
+Inaccessible-API public void android.appwidget.AppWidgetManager.setBindAppWidgetPermission(java.lang.String, boolean) -> MODIFY_APPWIDGET_BIND_PERMISSIONS
+Inaccessible-API public boolean android.bluetooth.BluetoothA2dp.connect(android.bluetooth.BluetoothDevice) -> BLUETOOTH, BLUETOOTH_ADMIN
+Inaccessible-API public boolean android.bluetooth.BluetoothA2dp.disconnect(android.bluetooth.BluetoothDevice) -> BLUETOOTH, BLUETOOTH_ADMIN
+Inaccessible-API public boolean android.bluetooth.BluetoothA2dp.setPriority(android.bluetooth.BluetoothDevice, int) -> BLUETOOTH, BLUETOOTH_ADMIN
+Inaccessible-API public int android.bluetooth.BluetoothA2dp.getPriority(android.bluetooth.BluetoothDevice) -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothA2dp.isA2dpPlaying(android.bluetooth.BluetoothDevice) -> BLUETOOTH
+Inaccessible-API public boolean android.bluetooth.BluetoothAdapter.startAdvertising(android.bluetooth.BluetoothAdapter$AdvertiseCallback) -> BLUETOOTH, BLUETOOTH_PRIVILEGED
+Accessible-API public boolean android.bluetooth.BluetoothAdapter.isEnabled() -> BLUETOOTH
+Accessible-API public int android.bluetooth.BluetoothAdapter.getState() -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothAdapter.enable() -> BLUETOOTH, BLUETOOTH_ADMIN
+Accessible-API public boolean android.bluetooth.BluetoothAdapter.disable() -> BLUETOOTH, BLUETOOTH_ADMIN
+Inaccessible-API public boolean android.bluetooth.BluetoothAdapter.disable(boolean) -> BLUETOOTH, BLUETOOTH_ADMIN
+Accessible-API public java.lang.String android.bluetooth.BluetoothAdapter.getAddress() -> BLUETOOTH
+Accessible-API public java.lang.String android.bluetooth.BluetoothAdapter.getName() -> BLUETOOTH
+Inaccessible-API public boolean android.bluetooth.BluetoothAdapter.configHciSnoopLog(boolean) -> BLUETOOTH, BLUETOOTH_ADMIN
+Inaccessible-API public android.os.ParcelUuid android.bluetooth.BluetoothAdapter.getUuids() -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothAdapter.setName(java.lang.String) -> BLUETOOTH, BLUETOOTH_ADMIN
+Accessible-API public int android.bluetooth.BluetoothAdapter.getScanMode() -> BLUETOOTH
+Inaccessible-API public boolean android.bluetooth.BluetoothAdapter.setScanMode(int, int) -> WRITE_SECURE_SETTINGS
+Accessible-API public boolean android.bluetooth.BluetoothAdapter.startDiscovery() -> BLUETOOTH, BLUETOOTH_ADMIN
+Accessible-API public boolean android.bluetooth.BluetoothAdapter.cancelDiscovery() -> BLUETOOTH, BLUETOOTH_ADMIN
+Accessible-API public boolean android.bluetooth.BluetoothAdapter.isDiscovering() -> BLUETOOTH
+Inaccessible-API public boolean android.bluetooth.BluetoothAdapter.isAdvertising() -> BLUETOOTH, BLUETOOTH_PRIVILEGED
+Accessible-API public java.util.Set android.bluetooth.BluetoothAdapter.getBondedDevices() -> BLUETOOTH
+Accessible-API public int android.bluetooth.BluetoothAdapter.getProfileConnectionState(int) -> BLUETOOTH
+Inaccessible-API public android.bluetooth.BluetoothServerSocket android.bluetooth.BluetoothAdapter.listenUsingRfcommOn(int) -> BLUETOOTH, BLUETOOTH_ADMIN
+Accessible-API public android.bluetooth.BluetoothServerSocket android.bluetooth.BluetoothAdapter.listenUsingRfcommWithServiceRecord(java.lang.String, java.util.UUID) -> BLUETOOTH
+Accessible-API public android.bluetooth.BluetoothServerSocket android.bluetooth.BluetoothAdapter.listenUsingInsecureRfcommWithServiceRecord(java.lang.String, java.util.UUID) -> BLUETOOTH
+Inaccessible-API public android.bluetooth.BluetoothServerSocket android.bluetooth.BluetoothAdapter.listenUsingEncryptedRfcommWithServiceRecord(java.lang.String, java.util.UUID) -> BLUETOOTH
+Inaccessible-API public android.util.Pair android.bluetooth.BluetoothAdapter.readOutOfBandData() -> BLUETOOTH
+Inaccessible-API public boolean android.bluetooth.BluetoothAdapter.changeApplicationBluetoothState(boolean, android.bluetooth.BluetoothAdapter$BluetoothStateChangeCallback) -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothAdapter.startLeScan(android.bluetooth.BluetoothAdapter$LeScanCallback) -> BLUETOOTH, BLUETOOTH_ADMIN
+Accessible-API public boolean android.bluetooth.BluetoothAdapter.startLeScan(java.util.UUID[], android.bluetooth.BluetoothAdapter$LeScanCallback) -> BLUETOOTH, BLUETOOTH_ADMIN
+Accessible-API public void android.bluetooth.BluetoothAdapter.stopLeScan(android.bluetooth.BluetoothAdapter$LeScanCallback) -> BLUETOOTH, BLUETOOTH_ADMIN
+Accessible-API public java.lang.String android.bluetooth.BluetoothDevice.getName() -> BLUETOOTH
+Accessible-API public int android.bluetooth.BluetoothDevice.getType() -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothDevice.createBond() -> BLUETOOTH, BLUETOOTH_ADMIN
+Inaccessible-API public boolean android.bluetooth.BluetoothDevice.createBondOutOfBand(byte[], byte[]) -> BLUETOOTH, BLUETOOTH_ADMIN
+Inaccessible-API public boolean android.bluetooth.BluetoothDevice.setDeviceOutOfBandData(byte[], byte[]) -> BLUETOOTH, BLUETOOTH_ADMIN
+Inaccessible-API public boolean android.bluetooth.BluetoothDevice.cancelBondProcess() -> BLUETOOTH, BLUETOOTH_ADMIN
+Inaccessible-API public boolean android.bluetooth.BluetoothDevice.removeBond() -> BLUETOOTH, BLUETOOTH_ADMIN
+Accessible-API public int android.bluetooth.BluetoothDevice.getBondState() -> BLUETOOTH
+Accessible-API public android.bluetooth.BluetoothClass android.bluetooth.BluetoothDevice.getBluetoothClass() -> BLUETOOTH
+Inaccessible-API public boolean android.bluetooth.BluetoothDevice.getTrustState() -> BLUETOOTH
+Inaccessible-API public boolean android.bluetooth.BluetoothDevice.setTrust(boolean) -> BLUETOOTH, BLUETOOTH_ADMIN
+Accessible-API public android.os.ParcelUuid android.bluetooth.BluetoothDevice.getUuids() -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothDevice.fetchUuidsWithSdp() -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothDevice.setPin(byte[]) -> BLUETOOTH, BLUETOOTH_ADMIN
+Accessible-API public boolean android.bluetooth.BluetoothDevice.setPairingConfirmation(boolean) -> BLUETOOTH, BLUETOOTH_ADMIN
+Inaccessible-API public android.bluetooth.BluetoothSocket android.bluetooth.BluetoothDevice.createRfcommSocket(int) -> BLUETOOTH
+Accessible-API public android.bluetooth.BluetoothSocket android.bluetooth.BluetoothDevice.createRfcommSocketToServiceRecord(java.util.UUID) -> BLUETOOTH
+Accessible-API public android.bluetooth.BluetoothSocket android.bluetooth.BluetoothDevice.createInsecureRfcommSocketToServiceRecord(java.util.UUID) -> BLUETOOTH
+Inaccessible-API public android.bluetooth.BluetoothSocket android.bluetooth.BluetoothDevice.createInsecureRfcommSocket(int) -> BLUETOOTH, BLUETOOTH_ADMIN
+Inaccessible-API public android.bluetooth.BluetoothSocket android.bluetooth.BluetoothDevice.createScoSocket() -> BLUETOOTH, BLUETOOTH_ADMIN
+Accessible-API private boolean android.bluetooth.BluetoothGatt.registerApp(android.bluetooth.BluetoothGattCallback) -> BLUETOOTH
+Accessible-API  boolean android.bluetooth.BluetoothGatt.connect(java.lang.Boolean, android.bluetooth.BluetoothGattCallback) -> BLUETOOTH
+Accessible-API public void android.bluetooth.BluetoothGatt.disconnect() -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothGatt.discoverServices() -> BLUETOOTH
+Accessible-API public java.util.List android.bluetooth.BluetoothGatt.getServices() -> BLUETOOTH
+Accessible-API public android.bluetooth.BluetoothGattService android.bluetooth.BluetoothGatt.getService(java.util.UUID) -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothGatt.readCharacteristic(android.bluetooth.BluetoothGattCharacteristic) -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothGatt.writeCharacteristic(android.bluetooth.BluetoothGattCharacteristic) -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothGatt.readDescriptor(android.bluetooth.BluetoothGattDescriptor) -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothGatt.writeDescriptor(android.bluetooth.BluetoothGattDescriptor) -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothGatt.beginReliableWrite() -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothGatt.executeReliableWrite() -> BLUETOOTH
+Accessible-API public void android.bluetooth.BluetoothGatt.abortReliableWrite() -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothGatt.setCharacteristicNotification(android.bluetooth.BluetoothGattCharacteristic, boolean) -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothGatt.readRemoteRssi() -> BLUETOOTH
+Inaccessible-API public boolean android.bluetooth.BluetoothGatt.configureMTU(int) -> BLUETOOTH
+Accessible-API public constructor android.bluetooth.BluetoothGattCharacteristic.BluetoothGattCharacteristic(java.util.UUID, int, int) -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothGattCharacteristic.addDescriptor(android.bluetooth.BluetoothGattDescriptor) -> BLUETOOTH
+Accessible-API public constructor android.bluetooth.BluetoothGattDescriptor.BluetoothGattDescriptor(java.util.UUID, int) -> BLUETOOTH
+Accessible-API  constructor android.bluetooth.BluetoothGattDescriptor.BluetoothGattDescriptor(android.bluetooth.BluetoothGattCharacteristic, java.util.UUID, int, int) -> BLUETOOTH
+Inaccessible-API public int android.bluetooth.BluetoothGattDescriptor.getInstanceId() -> BLUETOOTH
+Accessible-API  boolean android.bluetooth.BluetoothGattServer.registerCallback(android.bluetooth.BluetoothGattServerCallback) -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothGattServer.connect(android.bluetooth.BluetoothDevice, boolean) -> BLUETOOTH
+Accessible-API public void android.bluetooth.BluetoothGattServer.cancelConnection(android.bluetooth.BluetoothDevice) -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothGattServer.sendResponse(android.bluetooth.BluetoothDevice, int, int, int, byte[]) -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothGattServer.notifyCharacteristicChanged(android.bluetooth.BluetoothDevice, android.bluetooth.BluetoothGattCharacteristic, boolean) -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothGattServer.addService(android.bluetooth.BluetoothGattService) -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothGattServer.removeService(android.bluetooth.BluetoothGattService) -> BLUETOOTH
+Accessible-API public void android.bluetooth.BluetoothGattServer.clearServices() -> BLUETOOTH
+Accessible-API public java.util.List android.bluetooth.BluetoothGattServer.getServices() -> BLUETOOTH
+Accessible-API public android.bluetooth.BluetoothGattService android.bluetooth.BluetoothGattServer.getService(java.util.UUID) -> BLUETOOTH
+Accessible-API public constructor android.bluetooth.BluetoothGattService.BluetoothGattService(java.util.UUID, int) -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothGattService.addService(android.bluetooth.BluetoothGattService) -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothGattService.addCharacteristic(android.bluetooth.BluetoothGattCharacteristic) -> BLUETOOTH
+Inaccessible-API public boolean android.bluetooth.BluetoothHeadset.connect(android.bluetooth.BluetoothDevice) -> BLUETOOTH, BLUETOOTH_ADMIN
+Inaccessible-API public boolean android.bluetooth.BluetoothHeadset.disconnect(android.bluetooth.BluetoothDevice) -> BLUETOOTH, BLUETOOTH_ADMIN
+Inaccessible-API public boolean android.bluetooth.BluetoothHeadset.setPriority(android.bluetooth.BluetoothDevice, int) -> BLUETOOTH, BLUETOOTH_ADMIN
+Inaccessible-API public int android.bluetooth.BluetoothHeadset.getPriority(android.bluetooth.BluetoothDevice) -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothHeadset.startVoiceRecognition(android.bluetooth.BluetoothDevice) -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothHeadset.stopVoiceRecognition(android.bluetooth.BluetoothDevice) -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothHeadset.isAudioConnected(android.bluetooth.BluetoothDevice) -> BLUETOOTH
+Inaccessible-API public boolean android.bluetooth.BluetoothHeadset.isAudioOn() -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothHeadset.sendVendorSpecificResultCode(android.bluetooth.BluetoothDevice, java.lang.String, java.lang.String) -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothHealth.registerSinkAppConfiguration(java.lang.String, int, android.bluetooth.BluetoothHealthCallback) -> BLUETOOTH
+Inaccessible-API public boolean android.bluetooth.BluetoothHealth.registerAppConfiguration(java.lang.String, int, int, int, android.bluetooth.BluetoothHealthCallback) -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothHealth.unregisterAppConfiguration(android.bluetooth.BluetoothHealthAppConfiguration) -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothHealth.connectChannelToSource(android.bluetooth.BluetoothDevice, android.bluetooth.BluetoothHealthAppConfiguration) -> BLUETOOTH
+Inaccessible-API public boolean android.bluetooth.BluetoothHealth.connectChannelToSink(android.bluetooth.BluetoothDevice, android.bluetooth.BluetoothHealthAppConfiguration, int) -> BLUETOOTH
+Accessible-API public boolean android.bluetooth.BluetoothHealth.disconnectChannel(android.bluetooth.BluetoothDevice, android.bluetooth.BluetoothHealthAppConfiguration, int) -> BLUETOOTH
+Accessible-API public android.os.ParcelFileDescriptor android.bluetooth.BluetoothHealth.getMainChannelFd(android.bluetooth.BluetoothDevice, android.bluetooth.BluetoothHealthAppConfiguration) -> BLUETOOTH
+Accessible-API public int android.bluetooth.BluetoothHealth.getConnectionState(android.bluetooth.BluetoothDevice) -> BLUETOOTH
+Accessible-API public java.util.List android.bluetooth.BluetoothHealth.getConnectedDevices() -> BLUETOOTH
+Accessible-API public java.util.List android.bluetooth.BluetoothHealth.getDevicesMatchingConnectionStates(int[]) -> BLUETOOTH
+Inaccessible-API public boolean android.bluetooth.BluetoothInputDevice.connect(android.bluetooth.BluetoothDevice) -> BLUETOOTH, BLUETOOTH_ADMIN
+Inaccessible-API public boolean android.bluetooth.BluetoothInputDevice.disconnect(android.bluetooth.BluetoothDevice) -> BLUETOOTH, BLUETOOTH_ADMIN
+Inaccessible-API public boolean android.bluetooth.BluetoothInputDevice.setPriority(android.bluetooth.BluetoothDevice, int) -> BLUETOOTH, BLUETOOTH_ADMIN
+Inaccessible-API public int android.bluetooth.BluetoothInputDevice.getPriority(android.bluetooth.BluetoothDevice) -> BLUETOOTH
+Inaccessible-API public boolean android.bluetooth.BluetoothInputDevice.virtualUnplug(android.bluetooth.BluetoothDevice) -> BLUETOOTH, BLUETOOTH_ADMIN
+Inaccessible-API public boolean android.bluetooth.BluetoothInputDevice.getProtocolMode(android.bluetooth.BluetoothDevice) -> BLUETOOTH, BLUETOOTH_ADMIN
+Inaccessible-API public boolean android.bluetooth.BluetoothInputDevice.setProtocolMode(android.bluetooth.BluetoothDevice, int) -> BLUETOOTH, BLUETOOTH_ADMIN
+Inaccessible-API public boolean android.bluetooth.BluetoothInputDevice.getReport(android.bluetooth.BluetoothDevice, byte, byte, int) -> BLUETOOTH, BLUETOOTH_ADMIN
+Inaccessible-API public boolean android.bluetooth.BluetoothInputDevice.setReport(android.bluetooth.BluetoothDevice, byte, java.lang.String) -> BLUETOOTH, BLUETOOTH_ADMIN
+Inaccessible-API public boolean android.bluetooth.BluetoothInputDevice.sendData(android.bluetooth.BluetoothDevice, java.lang.String) -> BLUETOOTH, BLUETOOTH_ADMIN
+Accessible-API public int android.bluetooth.BluetoothManager.getConnectionState(android.bluetooth.BluetoothDevice, int) -> BLUETOOTH
+Accessible-API public java.util.List android.bluetooth.BluetoothManager.getConnectedDevices(int) -> BLUETOOTH
+Accessible-API public java.util.List android.bluetooth.BluetoothManager.getDevicesMatchingConnectionStates(int, int[]) -> BLUETOOTH
+Inaccessible-API public boolean android.bluetooth.BluetoothPan.connect(android.bluetooth.BluetoothDevice) -> BLUETOOTH, BLUETOOTH_ADMIN
+Inaccessible-API public boolean android.bluetooth.BluetoothPan.disconnect(android.bluetooth.BluetoothDevice) -> BLUETOOTH, BLUETOOTH_ADMIN
+Accessible-API public static boolean android.content.ContentResolver.getSyncAutomatically(android.accounts.Account, java.lang.String) -> READ_SYNC_SETTINGS
+Accessible-API public static void android.content.ContentResolver.setSyncAutomatically(android.accounts.Account, java.lang.String, boolean) -> WRITE_SYNC_SETTINGS
+Accessible-API public static void android.content.ContentResolver.addPeriodicSync(android.accounts.Account, java.lang.String, android.os.Bundle, long) -> WRITE_SYNC_SETTINGS
+Accessible-API public static void android.content.ContentResolver.removePeriodicSync(android.accounts.Account, java.lang.String, android.os.Bundle) -> WRITE_SYNC_SETTINGS
+Accessible-API public static java.util.List android.content.ContentResolver.getPeriodicSyncs(android.accounts.Account, java.lang.String) -> READ_SYNC_SETTINGS
+Accessible-API public static int android.content.ContentResolver.getIsSyncable(android.accounts.Account, java.lang.String) -> READ_SYNC_SETTINGS
+Accessible-API public static void android.content.ContentResolver.setIsSyncable(android.accounts.Account, java.lang.String, int) -> WRITE_SYNC_SETTINGS
+Accessible-API public static boolean android.content.ContentResolver.getMasterSyncAutomatically() -> READ_SYNC_SETTINGS
+Accessible-API public static void android.content.ContentResolver.setMasterSyncAutomatically(boolean) -> WRITE_SYNC_SETTINGS
+Accessible-API public static boolean android.content.ContentResolver.isSyncActive(android.accounts.Account, java.lang.String) -> READ_SYNC_STATS
+Accessible-API public static android.content.SyncInfo android.content.ContentResolver.getCurrentSync() -> READ_SYNC_STATS
+Accessible-API public static java.util.List android.content.ContentResolver.getCurrentSyncs() -> READ_SYNC_STATS
+Accessible-API public static boolean android.content.ContentResolver.isSyncPending(android.accounts.Account, java.lang.String) -> READ_SYNC_STATS
+Accessible-API public abstract java.io.File android.content.Context.getExternalFilesDir(java.lang.String) -> READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE
+Accessible-API public abstract java.io.File android.content.Context.getObbDir() -> READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE
+Accessible-API public abstract java.io.File android.content.Context.getExternalCacheDir() -> READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE
+Accessible-API public abstract void android.content.Context.setWallpaper(android.graphics.Bitmap) -> SET_WALLPAPER
+Accessible-API public abstract void android.content.Context.setWallpaper(java.io.InputStream) -> SET_WALLPAPER
+Accessible-API public abstract void android.content.Context.clearWallpaper() -> SET_WALLPAPER
+Inaccessible-API public void android.content.Context.startActivityAsUser(android.content.Intent, android.os.UserHandle) -> INTERACT_ACROSS_USERS, INTERACT_ACROSS_USERS_FULL
+Inaccessible-API public void android.content.Context.startActivityAsUser(android.content.Intent, android.os.Bundle, android.os.UserHandle) -> INTERACT_ACROSS_USERS, INTERACT_ACROSS_USERS_FULL
+Accessible-API public abstract void android.content.Context.sendBroadcastAsUser(android.content.Intent, android.os.UserHandle) -> INTERACT_ACROSS_USERS
+Accessible-API public abstract void android.content.Context.sendBroadcastAsUser(android.content.Intent, android.os.UserHandle, java.lang.String) -> INTERACT_ACROSS_USERS
+Accessible-API public abstract void android.content.Context.sendOrderedBroadcastAsUser(android.content.Intent, android.os.UserHandle, java.lang.String, android.content.BroadcastReceiver, android.os.Handler, int, java.lang.String, android.os.Bundle) -> INTERACT_ACROSS_USERS
+Accessible-API public abstract void android.content.Context.sendStickyBroadcast(android.content.Intent) -> BROADCAST_STICKY
+Accessible-API public abstract void android.content.Context.removeStickyBroadcast(android.content.Intent) -> BROADCAST_STICKY
+Accessible-API public abstract void android.content.Context.sendStickyBroadcastAsUser(android.content.Intent, android.os.UserHandle) -> INTERACT_ACROSS_USERS
+Accessible-API public abstract void android.content.Context.sendStickyOrderedBroadcastAsUser(android.content.Intent, android.os.UserHandle, android.content.BroadcastReceiver, android.os.Handler, int, java.lang.String, android.os.Bundle) -> INTERACT_ACROSS_USERS
+Accessible-API public abstract void android.content.Context.removeStickyBroadcastAsUser(android.content.Intent, android.os.UserHandle) -> INTERACT_ACROSS_USERS, BROADCAST_STICKY
+Inaccessible-API public abstract android.content.Intent android.content.Context.registerReceiverAsUser(android.content.BroadcastReceiver, android.os.UserHandle, android.content.IntentFilter, java.lang.String, android.os.Handler) -> INTERACT_ACROSS_USERS, INTERACT_ACROSS_USERS_FULL
+Inaccessible-API public abstract java.util.List android.content.pm.PackageManager.getInstalledPackages(int, int) -> INTERACT_ACROSS_USERS, INTERACT_ACROSS_USERS_FULL
+Inaccessible-API public abstract void android.content.pm.PackageManager.installPackage(android.net.Uri, IPackageInstallObserver, int, java.lang.String) -> INSTALL_PACKAGES
+Accessible-API public abstract void android.content.pm.PackageManager.verifyPendingInstall(int, int) -> PACKAGE_VERIFICATION_AGENT
+Accessible-API public abstract void android.content.pm.PackageManager.extendVerificationTimeout(int, int, long) -> PACKAGE_VERIFICATION_AGENT
+Inaccessible-API public abstract void android.content.pm.PackageManager.deletePackage(java.lang.String, IPackageDeleteObserver, int) -> DELETE_PACKAGES
+Inaccessible-API public abstract void android.content.pm.PackageManager.deleteApplicationCacheFiles(java.lang.String, IPackageDataObserver) -> DELETE_CACHE_FILES
+Inaccessible-API public abstract void android.content.pm.PackageManager.getPackageSizeInfo(java.lang.String, int, IPackageStatsObserver) -> GET_PACKAGE_SIZE
+Inaccessible-API public abstract void android.content.pm.PackageManager.movePackage(java.lang.String, IPackageMoveObserver, int) -> MOVE_PACKAGE
+Inaccessible-API public void android.hardware.display.DisplayManager.startWifiDisplayScan() -> CONFIGURE_WIFI_DISPLAY
+Inaccessible-API public void android.hardware.display.DisplayManager.stopWifiDisplayScan() -> CONFIGURE_WIFI_DISPLAY
+Inaccessible-API public void android.hardware.display.DisplayManager.connectWifiDisplay(java.lang.String) -> CONFIGURE_WIFI_DISPLAY
+Inaccessible-API public void android.hardware.display.DisplayManager.renameWifiDisplay(java.lang.String, java.lang.String) -> CONFIGURE_WIFI_DISPLAY
+Inaccessible-API public void android.hardware.display.DisplayManager.forgetWifiDisplay(java.lang.String) -> CONFIGURE_WIFI_DISPLAY
+Accessible-API public void android.hardware.display.VirtualDisplayTest.testPublicPresentationVirtualDisplay() -> SYSTEM_ALERT_WINDOW, CAPTURE_VIDEO_OUTPUT
+Accessible-API public void android.hardware.display.VirtualDisplayTest.testSecurePublicPresentationVirtualDisplay() -> SYSTEM_ALERT_WINDOW, CAPTURE_SECURE_VIDEO_OUTPUT
+Inaccessible-API public void android.hardware.input.InputManager.setPointerSpeed(android.content.Context, int) -> WRITE_SETTINGS
+Inaccessible-API public void android.hardware.input.InputManager.tryPointerSpeed(int) -> SET_POINTER_SPEED
+Inaccessible-API public boolean android.hardware.input.InputManager.injectInputEvent(android.view.InputEvent, int) -> INJECT_EVENTS
+Accessible-API public int android.hardware.location.GeofenceHardware.getMonitoringTypes() -> LOCATION_HARDWARE
+Accessible-API public boolean android.hardware.location.GeofenceHardware.addGeofence(int, int, android.hardware.location.GeofenceHardwareRequest, android.hardware.location.GeofenceHardwareCallback) -> ACCESS_FINE_LOCATION, LOCATION_HARDWARE
+Accessible-API public boolean android.hardware.location.GeofenceHardware.removeGeofence(int, int) -> ACCESS_FINE_LOCATION, LOCATION_HARDWARE
+Accessible-API public boolean android.hardware.location.GeofenceHardware.pauseGeofence(int, int) -> ACCESS_FINE_LOCATION, LOCATION_HARDWARE
+Accessible-API public boolean android.hardware.location.GeofenceHardware.resumeGeofence(int, int, int) -> ACCESS_FINE_LOCATION, LOCATION_HARDWARE
+Accessible-API public boolean android.hardware.location.GeofenceHardware.registerForMonitorStateChangeCallback(int, android.hardware.location.GeofenceHardwareMonitorCallback) -> ACCESS_FINE_LOCATION, LOCATION_HARDWARE
+Accessible-API public boolean android.hardware.location.GeofenceHardware.unregisterForMonitorStateChangeCallback(int, android.hardware.location.GeofenceHardwareMonitorCallback) -> ACCESS_FINE_LOCATION, LOCATION_HARDWARE
+Accessible-API public void android.location.LocationManager.addProximityAlert(double, double, float, long, android.app.PendingIntent) -> ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION
+Inaccessible-API public void android.location.LocationManager.addGeofence(android.location.LocationRequest, android.location.Geofence, android.app.PendingIntent) -> ACCESS_FINE_LOCATION
+Accessible-API public void android.location.LocationManager.removeProximityAlert(android.app.PendingIntent) -> ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION
+Inaccessible-API public void android.location.LocationManager.removeGeofence(android.location.Geofence, android.app.PendingIntent) -> ACCESS_FINE_LOCATION
+Inaccessible-API public void android.location.LocationManager.removeAllGeofences(android.app.PendingIntent) -> ACCESS_FINE_LOCATION
+Accessible-API public void android.location.LocationManager.addTestProvider(java.lang.String, boolean, boolean, boolean, boolean, boolean, boolean, boolean, int, int) -> ACCESS_MOCK_LOCATION
+Accessible-API public void android.location.LocationManager.removeTestProvider(java.lang.String) -> ACCESS_MOCK_LOCATION
+Accessible-API public void android.location.LocationManager.setTestProviderLocation(java.lang.String, android.location.Location) -> ACCESS_MOCK_LOCATION
+Accessible-API public void android.location.LocationManager.clearTestProviderLocation(java.lang.String) -> ACCESS_MOCK_LOCATION
+Accessible-API public void android.location.LocationManager.setTestProviderEnabled(java.lang.String, boolean) -> ACCESS_MOCK_LOCATION
+Accessible-API public void android.location.LocationManager.clearTestProviderEnabled(java.lang.String) -> ACCESS_MOCK_LOCATION
+Accessible-API public void android.location.LocationManager.setTestProviderStatus(java.lang.String, int, android.os.Bundle, long) -> ACCESS_MOCK_LOCATION
+Accessible-API public void android.location.LocationManager.clearTestProviderStatus(java.lang.String) -> ACCESS_MOCK_LOCATION
+Accessible-API public boolean android.location.LocationManager.addGpsStatusListener(android.location.GpsStatus) -> ACCESS_FINE_LOCATION
+Accessible-API public boolean android.location.LocationManager.addNmeaListener(android.location.GpsStatus) -> ACCESS_FINE_LOCATION
+Inaccessible-API public void android.location.LocationRequest.setWorkSource(android.os.WorkSource) -> UPDATE_DEVICE_STATS
+Inaccessible-API public void android.location.LocationRequest.setHideFromAppOps(boolean) -> UPDATE_APP_OPS_STATS
+Inaccessible-API public void android.media.AsyncPlayer.setUsesWakeLock(android.content.Context) -> WAKE_LOCK
+Accessible-API public void android.media.AudioManager.startBluetoothSco() -> MODIFY_AUDIO_SETTINGS
+Accessible-API public void android.media.AudioManager.stopBluetoothSco() -> MODIFY_AUDIO_SETTINGS
+Inaccessible-API public void android.media.AudioManager.registerRemoteControlDisplay(IRemoteControlDisplay) -> MEDIA_CONTENT_CONTROL
+Inaccessible-API public void android.media.AudioManager.registerRemoteControlDisplay(IRemoteControlDisplay, int, int) -> MEDIA_CONTENT_CONTROL
+Inaccessible-API private int android.media.MediaFocusControl.checkRcdRegistrationAuthorization(android.content.ComponentName) -> MEDIA_CONTENT_CONTROL
+Accessible-API public void android.media.MediaPlayer.setWakeMode(android.content.Context, int) -> WAKE_LOCK
+Accessible-API public int android.net.ConnectivityManager.getNetworkPreference() -> ACCESS_NETWORK_STATE
+Accessible-API public android.net.NetworkInfo android.net.ConnectivityManager.getActiveNetworkInfo() -> ACCESS_NETWORK_STATE
+Inaccessible-API public android.net.NetworkInfo android.net.ConnectivityManager.getActiveNetworkInfoForUid(int) -> CONNECTIVITY_INTERNAL
+Accessible-API public android.net.NetworkInfo android.net.ConnectivityManager.getNetworkInfo(int) -> ACCESS_NETWORK_STATE
+Accessible-API public android.net.NetworkInfo android.net.ConnectivityManager.getAllNetworkInfo() -> ACCESS_NETWORK_STATE
+Inaccessible-API public android.net.NetworkInfo android.net.ConnectivityManager.getProvisioningOrActiveNetworkInfo() -> ACCESS_NETWORK_STATE
+Inaccessible-API public android.net.LinkProperties android.net.ConnectivityManager.getActiveLinkProperties() -> ACCESS_NETWORK_STATE
+Inaccessible-API public android.net.LinkProperties android.net.ConnectivityManager.getLinkProperties(int) -> ACCESS_NETWORK_STATE
+Inaccessible-API public boolean android.net.ConnectivityManager.setRadios(boolean) -> CHANGE_NETWORK_STATE
+Inaccessible-API public boolean android.net.ConnectivityManager.setRadio(int, boolean) -> CHANGE_NETWORK_STATE
+Accessible-API public int android.net.ConnectivityManager.startUsingNetworkFeature(int, java.lang.String) -> CHANGE_NETWORK_STATE
+Accessible-API public int android.net.ConnectivityManager.stopUsingNetworkFeature(int, java.lang.String) -> CHANGE_NETWORK_STATE
+Accessible-API public boolean android.net.ConnectivityManager.requestRouteToHost(int, int) -> CHANGE_NETWORK_STATE
+Inaccessible-API public void android.net.ConnectivityManager.setBackgroundDataSetting(boolean) -> CHANGE_BACKGROUND_DATA_SETTING
+Inaccessible-API public android.net.NetworkQuotaInfo android.net.ConnectivityManager.getActiveNetworkQuotaInfo() -> ACCESS_NETWORK_STATE
+Inaccessible-API public boolean android.net.ConnectivityManager.getMobileDataEnabled() -> ACCESS_NETWORK_STATE
+Inaccessible-API public java.lang.String android.net.ConnectivityManager.getTetherableIfaces() -> ACCESS_NETWORK_STATE
+Inaccessible-API public java.lang.String android.net.ConnectivityManager.getTetheredIfaces() -> ACCESS_NETWORK_STATE
+Inaccessible-API public java.lang.String android.net.ConnectivityManager.getTetheringErroredIfaces() -> ACCESS_NETWORK_STATE
+Inaccessible-API public int android.net.ConnectivityManager.tether(java.lang.String) -> CHANGE_NETWORK_STATE
+Inaccessible-API public int android.net.ConnectivityManager.untether(java.lang.String) -> CHANGE_NETWORK_STATE
+Inaccessible-API public boolean android.net.ConnectivityManager.isTetheringSupported() -> ACCESS_NETWORK_STATE
+Inaccessible-API public java.lang.String android.net.ConnectivityManager.getTetherableUsbRegexs() -> ACCESS_NETWORK_STATE
+Inaccessible-API public java.lang.String android.net.ConnectivityManager.getTetherableWifiRegexs() -> ACCESS_NETWORK_STATE
+Inaccessible-API public java.lang.String android.net.ConnectivityManager.getTetherableBluetoothRegexs() -> ACCESS_NETWORK_STATE
+Inaccessible-API public int android.net.ConnectivityManager.setUsbTethering(boolean) -> CHANGE_NETWORK_STATE
+Inaccessible-API public int android.net.ConnectivityManager.getLastTetherError(java.lang.String) -> ACCESS_NETWORK_STATE
+Inaccessible-API public boolean android.net.ConnectivityManager.requestNetworkTransitionWakelock(java.lang.String) -> CONNECTIVITY_INTERNAL
+Inaccessible-API public void android.net.ConnectivityManager.reportInetCondition(int, int) -> STATUS_BAR
+Inaccessible-API public void android.net.ConnectivityManager.setGlobalProxy(android.net.ProxyProperties) -> CONNECTIVITY_INTERNAL
+Inaccessible-API public android.net.ProxyProperties android.net.ConnectivityManager.getGlobalProxy() -> ACCESS_NETWORK_STATE
+Inaccessible-API public android.net.ProxyProperties android.net.ConnectivityManager.getProxy() -> ACCESS_NETWORK_STATE
+Inaccessible-API public void android.net.ConnectivityManager.setDataDependency(int, boolean) -> CONNECTIVITY_INTERNAL
+Inaccessible-API public boolean android.net.ConnectivityManager.isNetworkSupported(int) -> ACCESS_NETWORK_STATE
+Accessible-API public boolean android.net.ConnectivityManager.isActiveNetworkMetered() -> ACCESS_NETWORK_STATE
+Inaccessible-API public void android.net.ConnectivityManager.captivePortalCheckComplete(android.net.NetworkInfo) -> CONNECTIVITY_INTERNAL
+Inaccessible-API public void android.net.ConnectivityManager.captivePortalCheckCompleted(android.net.NetworkInfo, boolean) -> CONNECTIVITY_INTERNAL
+Inaccessible-API public void android.net.ConnectivityManager.setAirplaneMode(boolean) -> CONNECTIVITY_INTERNAL
+Inaccessible-API final public static org.apache.http.HttpHost android.net.Proxy.getPreferredHttpHost(android.content.Context, java.lang.String) -> ACCESS_NETWORK_STATE
+Inaccessible-API public static void android.net.TrafficStats.setThreadStatsUid(int) -> UPDATE_DEVICE_STATS
+Accessible-API public void android.net.sip.SipAudioCall.setSpeakerMode(boolean) -> MODIFY_AUDIO_SETTINGS
+Accessible-API public void android.net.sip.SipAudioCall.startAudio() -> RECORD_AUDIO, ACCESS_WIFI_STATE, WAKE_LOCK
+Accessible-API public void android.nfc.NfcAdapter.setBeamPushUris(android.net.Uri[], android.app.Activity) -> NFC
+Accessible-API public void android.nfc.NfcAdapter.setBeamPushUrisCallback(android.nfc.NfcAdapter$CreateBeamUrisCallback, android.app.Activity) -> NFC
+Accessible-API public void android.nfc.NfcAdapter.setNdefPushMessage(android.nfc.NdefMessage, android.app.Activity, android.app.Activity) -> NFC
+Accessible-API public void android.nfc.NfcAdapter.setNdefPushMessageCallback(android.nfc.NfcAdapter$CreateNdefMessageCallback, android.app.Activity, android.app.Activity) -> NFC
+Accessible-API public void android.nfc.NfcAdapter.setOnNdefPushCompleteCallback(android.nfc.NfcAdapter$OnNdefPushCompleteCallback, android.app.Activity, android.app.Activity) -> NFC
+Accessible-API public void android.nfc.NfcAdapter.enableForegroundDispatch(android.app.Activity, android.app.PendingIntent, android.content.IntentFilter[], java.lang.String[][]) -> NFC
+Accessible-API public void android.nfc.NfcAdapter.disableForegroundDispatch(android.app.Activity) -> NFC
+Accessible-API public void android.nfc.NfcAdapter.enableForegroundNdefPush(android.app.Activity, android.nfc.NdefMessage) -> NFC
+Accessible-API public void android.nfc.NfcAdapter.disableForegroundNdefPush(android.app.Activity) -> NFC
+Inaccessible-API public void android.nfc.NfcAdapter.dispatch(android.nfc.Tag) -> NFC, WRITE_SECURE_SETTINGS
+Accessible-API public boolean android.nfc.cardemulation.CardEmulation.isDefaultServiceForCategory(android.content.ComponentName, java.lang.String) -> NFC
+Accessible-API public boolean android.nfc.cardemulation.CardEmulation.isDefaultServiceForAid(android.content.ComponentName, java.lang.String) -> NFC
+Accessible-API public void android.nfc.tech.IsoDep.setTimeout(int) -> NFC
+Accessible-API public int android.nfc.tech.IsoDep.getTimeout() -> NFC
+Accessible-API public byte android.nfc.tech.IsoDep.transceive(byte[]) -> NFC
+Accessible-API public boolean android.nfc.tech.MifareClassic.authenticateSectorWithKeyA(int, byte[]) -> NFC
+Accessible-API public boolean android.nfc.tech.MifareClassic.authenticateSectorWithKeyB(int, byte[]) -> NFC
+Accessible-API public byte android.nfc.tech.MifareClassic.readBlock(int) -> NFC
+Accessible-API public void android.nfc.tech.MifareClassic.writeBlock(int, byte[]) -> NFC
+Accessible-API public void android.nfc.tech.MifareClassic.increment(int, int) -> NFC
+Accessible-API public void android.nfc.tech.MifareClassic.decrement(int, int) -> NFC
+Accessible-API public void android.nfc.tech.MifareClassic.transfer(int) -> NFC
+Accessible-API public void android.nfc.tech.MifareClassic.restore(int) -> NFC
+Accessible-API public byte android.nfc.tech.MifareClassic.transceive(byte[]) -> NFC
+Accessible-API public void android.nfc.tech.MifareClassic.setTimeout(int) -> NFC
+Accessible-API public int android.nfc.tech.MifareClassic.getTimeout() -> NFC
+Accessible-API public byte android.nfc.tech.MifareUltralight.readPages(int) -> NFC
+Accessible-API public void android.nfc.tech.MifareUltralight.writePage(int, byte[]) -> NFC
+Accessible-API public byte android.nfc.tech.MifareUltralight.transceive(byte[]) -> NFC
+Accessible-API public void android.nfc.tech.MifareUltralight.setTimeout(int) -> NFC
+Accessible-API public int android.nfc.tech.MifareUltralight.getTimeout() -> NFC
+Accessible-API public boolean android.nfc.tech.Ndef.isWritable() -> NFC
+Accessible-API public android.nfc.NdefMessage android.nfc.tech.Ndef.getNdefMessage() -> NFC
+Accessible-API public void android.nfc.tech.Ndef.writeNdefMessage(android.nfc.NdefMessage) -> NFC
+Accessible-API public boolean android.nfc.tech.Ndef.makeReadOnly() -> NFC
+Accessible-API public void android.nfc.tech.NdefFormatable.format(android.nfc.NdefMessage) -> NFC
+Accessible-API public void android.nfc.tech.NdefFormatable.formatReadOnly(android.nfc.NdefMessage) -> NFC
+Accessible-API public byte android.nfc.tech.NfcA.transceive(byte[]) -> NFC
+Accessible-API public void android.nfc.tech.NfcA.setTimeout(int) -> NFC
+Accessible-API public int android.nfc.tech.NfcA.getTimeout() -> NFC
+Accessible-API public byte android.nfc.tech.NfcB.transceive(byte[]) -> NFC
+Accessible-API public byte android.nfc.tech.NfcF.transceive(byte[]) -> NFC
+Accessible-API public void android.nfc.tech.NfcF.setTimeout(int) -> NFC
+Accessible-API public int android.nfc.tech.NfcF.getTimeout() -> NFC
+Accessible-API public byte android.nfc.tech.NfcV.transceive(byte[]) -> NFC
+Accessible-API public static boolean android.os.Debug.dumpService(java.lang.String, java.io.FileDescriptor, java.lang.String[]) -> DUMP
+Accessible-API public android.os.DropBoxManager$Entry android.os.DropBoxManager.getNextEntry(java.lang.String, long) -> READ_LOGS
+Inaccessible-API public static java.io.File android.os.Environment.getMediaStorageDirectory() -> WRITE_MEDIA_STORAGE
+Accessible-API public static java.io.File android.os.Environment.getExternalStorageDirectory() -> READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE
+Inaccessible-API public static java.io.File android.os.Environment.maybeTranslateEmulatedPathToInternal(java.io.File) -> WRITE_MEDIA_STORAGE
+Accessible-API public android.os.PowerManager$WakeLock android.os.PowerManager.newWakeLock(int, java.lang.String) -> WAKE_LOCK
+Accessible-API public void android.os.PowerManager.userActivity(long, boolean) -> DEVICE_POWER
+Accessible-API public void android.os.PowerManager.goToSleep(long) -> DEVICE_POWER
+Accessible-API public void android.os.PowerManager.wakeUp(long) -> DEVICE_POWER
+Inaccessible-API public void android.os.PowerManager.nap(long) -> DEVICE_POWER
+Inaccessible-API public void android.os.PowerManager.setBacklightBrightness(int) -> DEVICE_POWER
+Accessible-API public void android.os.PowerManager.reboot(java.lang.String) -> REBOOT
+Accessible-API private void android.os.PowerManagerTest.doTestSetBacklightBrightness() -> DEVICE_POWER
+Accessible-API public static void android.os.RecoverySystem.installPackage(android.content.Context, java.io.File) -> REBOOT
+Accessible-API public static void android.os.RecoverySystem.rebootWipeUserData(android.content.Context) -> REBOOT
+Inaccessible-API public static void android.os.RecoverySystem.rebootWipeUserData(android.content.Context, boolean) -> REBOOT
+Accessible-API public java.lang.String android.os.UserManager.getUserName() -> MANAGE_USERS
+Inaccessible-API public android.content.pm.UserInfo android.os.UserManager.getUserInfo(int) -> MANAGE_USERS
+Accessible-API public void android.os.UserManager.setUserRestrictions(android.os.Bundle) -> MANAGE_USERS
+Accessible-API public void android.os.UserManager.setUserRestrictions(android.os.Bundle, android.os.UserHandle) -> MANAGE_USERS
+Accessible-API public void android.os.UserManager.setUserRestriction(java.lang.String, boolean) -> MANAGE_USERS
+Inaccessible-API public void android.os.UserManager.setUserRestriction(java.lang.String, boolean, android.os.UserHandle) -> MANAGE_USERS
+Inaccessible-API public android.content.pm.UserInfo android.os.UserManager.createUser(java.lang.String, int) -> MANAGE_USERS
+Inaccessible-API public java.util.List android.os.UserManager.getUsers() -> MANAGE_USERS
+Inaccessible-API public java.util.List android.os.UserManager.getUsers(boolean) -> MANAGE_USERS
+Inaccessible-API public boolean android.os.UserManager.removeUser(int) -> MANAGE_USERS
+Inaccessible-API public void android.os.UserManager.setUserName(int, java.lang.String) -> MANAGE_USERS
+Inaccessible-API public void android.os.UserManager.setGuestEnabled(boolean) -> MANAGE_USERS
+Inaccessible-API public boolean android.os.UserManager.isGuestEnabled() -> MANAGE_USERS
+Inaccessible-API public void android.os.UserManager.wipeUser(int) -> MANAGE_USERS
+Accessible-API public boolean android.os.UserManager.setRestrictionsChallenge(java.lang.String) -> MANAGE_USERS
+Accessible-API public abstract void android.os.Vibrator.vibrate(long) -> VIBRATE
+Accessible-API public abstract void android.os.Vibrator.vibrate(long[], int) -> VIBRATE
+Accessible-API public abstract void android.os.Vibrator.cancel() -> VIBRATE
+Accessible-API public static java.io.File android.support.v4.content.ContextCompat.getObbDirs(android.content.Context) -> WRITE_EXTERNAL_STORAGE
+Accessible-API public static java.io.File android.support.v4.content.ContextCompat.getExternalFilesDirs(android.content.Context, java.lang.String) -> WRITE_EXTERNAL_STORAGE
+Accessible-API public static java.io.File android.support.v4.content.ContextCompat.getExternalCacheDirs(android.content.Context) -> WRITE_EXTERNAL_STORAGE
+Inaccessible-API public static boolean android.telephony.PhoneNumberUtils.isVoiceMailNumber(java.lang.String) -> READ_PHONE_STATE
+Inaccessible-API public void android.telephony.PhoneStateListener.onOtaspChanged(int) -> READ_PHONE_STATE
+Accessible-API public void android.telephony.SmsManager.sendTextMessage(java.lang.String, java.lang.String, java.lang.String, android.app.PendingIntent, android.app.PendingIntent) -> SEND_SMS
+Accessible-API public void android.telephony.SmsManager.sendMultipartTextMessage(java.lang.String, java.lang.String, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList) -> SEND_SMS
+Accessible-API public void android.telephony.SmsManager.sendDataMessage(java.lang.String, java.lang.String, short, byte[], android.app.PendingIntent, android.app.PendingIntent) -> SEND_SMS
+Accessible-API public java.lang.String android.telephony.TelephonyManager.getDeviceSoftwareVersion() -> READ_PHONE_STATE
+Accessible-API public java.lang.String android.telephony.TelephonyManager.getDeviceId() -> READ_PHONE_STATE
+Accessible-API public android.telephony.CellLocation android.telephony.TelephonyManager.getCellLocation() -> ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION
+Inaccessible-API public void android.telephony.TelephonyManager.enableLocationUpdates() -> CONTROL_LOCATION_UPDATES
+Inaccessible-API public void android.telephony.TelephonyManager.disableLocationUpdates() -> CONTROL_LOCATION_UPDATES
+Accessible-API public java.lang.String android.telephony.TelephonyManager.getSimSerialNumber() -> READ_PHONE_STATE
+Accessible-API public java.lang.String android.telephony.TelephonyManager.getSubscriberId() -> READ_PHONE_STATE
+Accessible-API public java.lang.String android.telephony.TelephonyManager.getGroupIdLevel1() -> READ_PHONE_STATE
+Accessible-API public java.lang.String android.telephony.TelephonyManager.getLine1Number() -> READ_PHONE_STATE
+Inaccessible-API public java.lang.String android.telephony.TelephonyManager.getLine1AlphaTag() -> READ_PHONE_STATE
+Inaccessible-API public java.lang.String android.telephony.TelephonyManager.getMsisdn() -> READ_PHONE_STATE
+Accessible-API public java.lang.String android.telephony.TelephonyManager.getVoiceMailNumber() -> READ_PHONE_STATE
+Inaccessible-API public java.lang.String android.telephony.TelephonyManager.getCompleteVoiceMailNumber() -> CALL_PRIVILEGED
+Inaccessible-API public int android.telephony.TelephonyManager.getVoiceMessageCount() -> READ_PHONE_STATE
+Accessible-API public java.lang.String android.telephony.TelephonyManager.getVoiceMailAlphaTag() -> READ_PHONE_STATE
+Accessible-API public java.util.List android.telephony.TelephonyManager.getAllCellInfo() -> ACCESS_COARSE_LOCATION
+Accessible-API synchronized public void android.webkit.WebSettings.setBlockNetworkLoads(boolean) -> INTERNET
+Accessible-API synchronized public void android.webkit.WebSettings.setGeolocationEnabled(boolean) -> ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION
+Accessible-API public void com.android.framework.permission.tests.SmsManagerPermissionTest.testSendTextMessage() -> SEND_SMS
+Accessible-API public void com.android.framework.permission.tests.SmsManagerPermissionTest.testSendDataMessage() -> SEND_SMS
+Accessible-API public void com.android.framework.permission.tests.VibratorServicePermissionTest.testVibrate() -> VIBRATE
+Accessible-API public void com.android.framework.permission.tests.VibratorServicePermissionTest.testVibratePattern() -> VIBRATE
+Accessible-API public void com.android.framework.permission.tests.VibratorServicePermissionTest.testCancelVibrate() -> VIBRATE
+Accessible-API protected void com.android.frameworks.downloadmanagertests.DownloadManagerBaseTest.setWiFiStateOn(boolean) -> ACCESS_WIFI_STATE, CHANGE_WIFI_STATE
+Accessible-API protected void com.android.frameworks.downloadmanagertests.DownloadManagerBaseTest.setAirplaneModeOn(boolean) -> WRITE_SETTINGS
+Inaccessible-API  com.android.internal.telephony.CallerInfo com.android.internal.telephony.CallerInfo.markAsVoiceMail() -> READ_PHONE_STATE
+Accessible-API public boolean com.android.internal.telephony.IccPhoneBookInterfaceManager.updateAdnRecordsInEfBySearch(int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String) -> WRITE_CONTACTS
+Accessible-API public boolean com.android.internal.telephony.IccPhoneBookInterfaceManager.updateAdnRecordsInEfByIndex(int, java.lang.String, java.lang.String, int, java.lang.String) -> WRITE_CONTACTS
+Accessible-API public java.util.List com.android.internal.telephony.IccPhoneBookInterfaceManager.getAdnRecordsInEf(int) -> READ_CONTACTS
+Inaccessible-API public static java.util.Collection com.android.internal.telephony.SmsApplication.getApplicationCollection(android.content.Context) -> SEND_RESPOND_VIA_MESSAGE, BROADCAST_SMS, BROADCAST_WAP_PUSH
+Accessible-API final public void com.android.location.provider.LocationProviderBase.reportLocation(android.location.Location) -> INSTALL_LOCATION_PROVIDER
+Accessible-API public static com.android.nfc_extras.NfcAdapterExtras com.android.nfc_extras.NfcAdapterExtras.get(android.nfc.NfcAdapter) -> WRITE_SECURE_SETTINGS
+Accessible-API public com.android.nfc_extras.NfcAdapterExtras$CardEmulationRoute com.android.nfc_extras.NfcAdapterExtras.getCardEmulationRoute() -> NFC, WRITE_SECURE_SETTINGS
+Accessible-API public void com.android.nfc_extras.NfcAdapterExtras.setCardEmulationRoute(com.android.nfc_extras.NfcAdapterExtras$CardEmulationRoute) -> NFC, WRITE_SECURE_SETTINGS
+Accessible-API public com.android.nfc_extras.NfcExecutionEnvironment com.android.nfc_extras.NfcAdapterExtras.getEmbeddedExecutionEnvironment() -> NFC, WRITE_SECURE_SETTINGS
+Accessible-API public void com.android.nfc_extras.NfcExecutionEnvironment.open() -> NFC, WRITE_SECURE_SETTINGS
+Accessible-API public void com.android.nfc_extras.NfcExecutionEnvironment.close() -> NFC, WRITE_SECURE_SETTINGS
+Accessible-API public byte com.android.nfc_extras.NfcExecutionEnvironment.transceive(byte[]) -> NFC, WRITE_SECURE_SETTINGS
+Inaccessible-API public void com.android.server.content.ContentService.registerContentObserver(android.net.Uri, boolean, android.database.IContentObserver, int) -> INTERACT_ACROSS_USERS, INTERACT_ACROSS_USERS_FULL
+Inaccessible-API public void com.android.server.content.ContentService.notifyChange(android.net.Uri, android.database.IContentObserver, boolean, boolean, int) -> INTERACT_ACROSS_USERS, INTERACT_ACROSS_USERS_FULL
+Inaccessible-API private void com.android.server.pm.PackageManagerService.enforceCrossUserPermission(int, int, boolean, java.lang.String) -> INTERACT_ACROSS_USERS, INTERACT_ACROSS_USERS_FULL
+Accessible-API private final static void com.android.server.pm.UserManagerService.checkManageUsersPermission(java.lang.String) -> MANAGE_USERS
+Inaccessible-API public void com.android.systemui.media.NotificationPlayer.setUsesWakeLock(android.content.Context) -> WAKE_LOCK
